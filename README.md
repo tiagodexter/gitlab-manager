@@ -12,7 +12,9 @@ The GitLab Job Monitoring Tool is a Python-based tool that connects to a GitLab 
 1. Clone the repository or download the code files.
 
 2. Install the required Python packages by running the following command:
+```
 pip install -r requirements.txt
+```
 
 
 ## Usage
@@ -24,7 +26,9 @@ To use the GitLab Job Monitoring Tool, follow these steps:
 2. Open a terminal or command prompt and navigate to the directory where the tool's files are located.
 
 3. Run the tool with the following command:
+```
 python gitlab_job_monitor.py --url <gitlab_url> --token <access_token> --project <project_id> [--output <output_format>]
+```
 
 Replace the placeholders with the appropriate values:
 - `<gitlab_url>`: The URL of your GitLab instance.
@@ -33,7 +37,9 @@ Replace the placeholders with the appropriate values:
 - `<output_format>` (optional): The desired output format. Choose from text, json, or csv. (Defaults to 'text')
 
 Example command:
+```
 python gitlab_job_monitor.py --url https://gitlab.example.com --token <your_token> --project 12345 --output text
+```
 
 
 4. The tool will connect to the specified GitLab instance, fetch the job statuses for the project, analyze common issues, and generate alerts in the specified output format.
